@@ -80,9 +80,6 @@
                 "type": "String"
               },
               "annotations": {
-                "parameterPurpose": {
-                  "role": "BEHAVIOUR"
-                },
                 "expressionSupport": {
                   "value": "SUPPORTED"
                 }
@@ -1663,9 +1660,6 @@
             "type": "String"
           },
           "annotations": {
-            "parameterPurpose": {
-              "role": "BEHAVIOUR"
-            },
             "expressionSupport": {
               "value": "SUPPORTED"
             }

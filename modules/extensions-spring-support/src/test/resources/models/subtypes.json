@@ -114,9 +114,6 @@
             }
           },
           "annotations": {
-            "parameterPurpose": {
-              "role": "BEHAVIOUR"
-            },
             "expressionSupport": {
               "value": "SUPPORTED"
             }
@@ -160,9 +157,6 @@
                   "type": "String"
                 },
                 "annotations": {
-                  "parameterPurpose": {
-                    "role": "BEHAVIOUR"
-                  },
                   "expressionSupport": {
                     "value": "SUPPORTED"
                   }
@@ -177,9 +171,6 @@
                   "type": "String"
                 },
                 "annotations": {
-                  "parameterPurpose": {
-                    "role": "BEHAVIOUR"
-                  },
                   "expressionSupport": {
                     "value": "SUPPORTED"
                   }
@@ -191,9 +182,6 @@
                 },
                 "model": "#..",
                 "annotations": {
-                  "parameterPurpose": {
-                    "role": "BEHAVIOUR"
-                  },
                   "expressionSupport": {
                     "value": "SUPPORTED"
                   }
@@ -202,9 +190,6 @@
             ]
           },
           "annotations": {
-            "parameterPurpose": {
-              "role": "BEHAVIOUR"
-            },
             "expressionSupport": {
               "value": "SUPPORTED"
             }
@@ -283,9 +268,6 @@
             }
           },
           "annotations": {
-            "parameterPurpose": {
-              "role": "BEHAVIOUR"
-            },
             "expressionSupport": {
               "value": "SUPPORTED"
             }
@@ -314,9 +296,6 @@
             }
           },
           "annotations": {
-            "parameterPurpose": {
-              "role": "BEHAVIOUR"
-            },
             "expressionSupport": {
               "value": "SUPPORTED"
             }
@@ -330,9 +309,6 @@
             "type": "String"
           },
           "annotations": {
-            "parameterPurpose": {
-              "role": "BEHAVIOUR"
-            },
             "default": "Enemies of Bondiola",
             "expressionSupport": {
               "value": "NOT_SUPPORTED"
@@ -3277,9 +3253,6 @@
             "type": "String"
           },
           "annotations": {
-            "parameterPurpose": {
-              "role": "BEHAVIOUR"
-            },
             "expressionSupport": {
               "value": "SUPPORTED"
             }
@@ -3293,9 +3266,6 @@
             "type": "String"
           },
           "annotations": {
-            "parameterPurpose": {
-              "role": "BEHAVIOUR"
-            },
             "default": "button",
             "expressionSupport": {
               "value": "SUPPORTED"
@@ -3357,9 +3327,6 @@
             "type": "String"
           },
           "annotations": {
-            "parameterPurpose": {
-              "role": "BEHAVIOUR"
-            },
             "expressionSupport": {
               "value": "SUPPORTED"
             }
@@ -3407,9 +3374,6 @@
             }
           },
           "annotations": {
-            "parameterPurpose": {
-              "role": "BEHAVIOUR"
-            },
             "expressionSupport": {
               "value": "SUPPORTED"
             }
@@ -3486,9 +3450,6 @@
             }
           },
           "annotations": {
-            "parameterPurpose": {
-              "role": "BEHAVIOUR"
-            },
             "default": "false",
             "expressionSupport": {
               "value": "SUPPORTED"
@@ -3503,9 +3464,6 @@
             "type": "String"
           },
           "annotations": {
-            "parameterPurpose": {
-              "role": "BEHAVIOUR"
-            },
             "default": "pivotal",
             "expressionSupport": {
               "value": "SUPPORTED"
@@ -3544,9 +3502,6 @@
             "type": "String"
           },
           "annotations": {
-            "parameterPurpose": {
-              "role": "BEHAVIOUR"
-            },
             "expressionSupport": {
               "value": "SUPPORTED"
             }
@@ -3575,9 +3530,6 @@
             }
           },
           "annotations": {
-            "parameterPurpose": {
-              "role": "BEHAVIOUR"
-            },
             "expressionSupport": {
               "value": "SUPPORTED"
             }
@@ -3592,9 +3544,6 @@
             "type": "String"
           },
           "annotations": {
-            "parameterPurpose": {
-              "role": "BEHAVIOUR"
-            },
             "expressionSupport": {
               "value": "SUPPORTED"
             }
@@ -3646,9 +3595,6 @@
             }
           },
           "annotations": {
-            "parameterPurpose": {
-              "role": "BEHAVIOUR"
-            },
             "expressionSupport": {
               "value": "SUPPORTED"
             }
@@ -3663,9 +3609,6 @@
             "type": "String"
           },
           "annotations": {
-            "parameterPurpose": {
-              "role": "BEHAVIOUR"
-            },
             "expressionSupport": {
               "value": "SUPPORTED"
             }
@@ -3800,9 +3743,6 @@
             }
           },
           "annotations": {
-            "parameterPurpose": {
-              "role": "BEHAVIOUR"
-            },
             "default": "6",
             "expressionSupport": {
               "value": "SUPPORTED"
@@ -4061,9 +4001,6 @@
             ]
           },
           "annotations": {
-            "parameterPurpose": {
-              "role": "BEHAVIOUR"
-            },
             "expressionSupport": {
               "value": "SUPPORTED"
             }
@@ -4096,9 +4033,6 @@
             "fields": []
           },
           "annotations": {
-            "parameterPurpose": {
-              "role": "BEHAVIOUR"
-            },
             "expressionSupport": {
               "value": "SUPPORTED"
             }
@@ -4182,9 +4116,6 @@
             ]
           },
           "annotations": {
-            "parameterPurpose": {
-              "role": "BEHAVIOUR"
-            },
             "expressionSupport": {
               "value": "SUPPORTED"
             }
@@ -4226,9 +4157,6 @@
             ]
           },
           "annotations": {
-            "parameterPurpose": {
-              "role": "BEHAVIOUR"
-            },
             "expressionSupport": {
               "value": "SUPPORTED"
             }
@@ -4289,9 +4217,6 @@
                   }
                 },
                 "annotations": {
-                  "parameterPurpose": {
-                    "role": "BEHAVIOUR"
-                  },
                   "expressionSupport": {
                     "value": "SUPPORTED"
                   }
@@ -4335,9 +4260,6 @@
                         "type": "String"
                       },
                       "annotations": {
-                        "parameterPurpose": {
-                          "role": "BEHAVIOUR"
-                        },
                         "expressionSupport": {
                           "value": "SUPPORTED"
                         }
@@ -4352,9 +4274,6 @@
                         "type": "String"
                       },
                       "annotations": {
-                        "parameterPurpose": {
-                          "role": "BEHAVIOUR"
-                        },
                         "expressionSupport": {
                           "value": "SUPPORTED"
                         }
@@ -4366,9 +4285,6 @@
                       },
                       "model": "#..",
                       "annotations": {
-                        "parameterPurpose": {
-                          "role": "BEHAVIOUR"
-                        },
                         "expressionSupport": {
                           "value": "SUPPORTED"
                         }
@@ -4377,9 +4293,6 @@
                   ]
                 },
                 "annotations": {
-                  "parameterPurpose": {
-                    "role": "BEHAVIOUR"
-                  },
                   "expressionSupport": {
                     "value": "SUPPORTED"
                   }
@@ -4388,9 +4301,6 @@
             ]
           },
           "annotations": {
-            "parameterPurpose": {
-              "role": "BEHAVIOUR"
-            },
             "expressionSupport": {
               "value": "SUPPORTED"
             }
@@ -4424,9 +4334,6 @@
             "fields": []
           },
           "annotations": {
-            "parameterPurpose": {
-              "role": "BEHAVIOUR"
-            },
             "expressionSupport": {
               "value": "SUPPORTED"
             }
@@ -4483,9 +4390,6 @@
             ]
           },
           "annotations": {
-            "parameterPurpose": {
-              "role": "BEHAVIOUR"
-            },
             "expressionSupport": {
               "value": "SUPPORTED"
             }
@@ -4526,9 +4430,6 @@
                   "type": "String"
                 },
                 "annotations": {
-                  "parameterPurpose": {
-                    "role": "BEHAVIOUR"
-                  },
                   "expressionSupport": {
                     "value": "SUPPORTED"
                   }
@@ -4576,9 +4477,6 @@
                   }
                 },
                 "annotations": {
-                  "parameterPurpose": {
-                    "role": "BEHAVIOUR"
-                  },
                   "expressionSupport": {
                     "value": "SUPPORTED"
                   }
@@ -4587,9 +4485,6 @@
             ]
           },
           "annotations": {
-            "parameterPurpose": {
-              "role": "BEHAVIOUR"
-            },
             "expressionSupport": {
               "value": "SUPPORTED"
             }
@@ -4650,9 +4545,6 @@
             }
           },
           "annotations": {
-            "parameterPurpose": {
-              "role": "BEHAVIOUR"
-            },
             "expressionSupport": {
               "value": "SUPPORTED"
             }
@@ -4713,9 +4605,6 @@
             }
           },
           "annotations": {
-            "parameterPurpose": {
-              "role": "BEHAVIOUR"
-            },
             "expressionSupport": {
               "value": "SUPPORTED"
             }
@@ -4767,9 +4656,6 @@
             }
           },
           "annotations": {
-            "parameterPurpose": {
-              "role": "BEHAVIOUR"
-            },
             "expressionSupport": {
               "value": "SUPPORTED"
             }
@@ -4823,9 +4709,6 @@
             "fields": []
           },
           "annotations": {
-            "parameterPurpose": {
-              "role": "BEHAVIOUR"
-            },
             "expressionSupport": {
               "value": "SUPPORTED"
             }
