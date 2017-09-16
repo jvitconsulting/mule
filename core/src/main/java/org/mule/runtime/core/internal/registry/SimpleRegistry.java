@@ -6,8 +6,10 @@
  */
 package org.mule.runtime.core.internal.registry;
 
+import static java.lang.String.format;
 import static org.reflections.ReflectionUtils.getAllFields;
 import static org.reflections.ReflectionUtils.withAnnotation;
+
 import org.mule.runtime.api.exception.MuleException;
 import org.mule.runtime.api.lifecycle.InitialisationException;
 import org.mule.runtime.core.api.Injector;
@@ -16,7 +18,10 @@ import org.mule.runtime.core.api.registry.LifecycleRegistry;
 import org.mule.runtime.core.api.registry.RegistrationException;
 import org.mule.runtime.core.internal.lifecycle.phases.NotInLifecyclePhase;
 
+import org.reflections.ReflectionUtils;
+
 import java.lang.reflect.Field;
+import java.lang.reflect.Method;
 
 import javax.inject.Inject;
 import javax.inject.Named;
@@ -146,10 +151,35 @@ public class SimpleRegistry extends TransientRegistry implements LifecycleRegist
           field.set(object, dependency);
         }
       } catch (Exception e) {
-        throw new RuntimeException(String.format("Could not inject dependency on field %s of type %s", field.getName(),
-                                                 object.getClass().getName()),
+        throw new RuntimeException(format("Could not inject dependency on field %s of type %s", field.getName(),
+                                          object.getClass().getName()),
                                    e);
       }
+    }
+    for (Method method : ReflectionUtils.getAllMethods(object.getClass(), withAnnotation(Inject.class))) {
+      if (method.getParameters().length == 1) {
+        Class<?> dependencyType = method.getParameterTypes()[0];
+        Named nameAnnotation = method.getAnnotation(Named.class);
+        Object dependency;
+        try {
+          if (nameAnnotation != null) {
+            dependency = lookupObject(nameAnnotation.value());
+          } else {
+            dependency = lookupObject(dependencyType);
+          }
+          if (dependency == null && MuleContext.class.isAssignableFrom(dependencyType)) {
+            dependency = muleContext;
+          }
+          if (dependency != null) {
+            method.invoke(object, dependency);
+          }
+        } catch (Exception e) {
+          throw new RuntimeException(format("Could not inject dependency on method %s of type %s", method.getName(),
+                                            object.getClass().getName()),
+                                     e);
+        }
+      }
+
     }
     return object;
   }
