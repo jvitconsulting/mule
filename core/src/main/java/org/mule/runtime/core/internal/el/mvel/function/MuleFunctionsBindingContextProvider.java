@@ -15,7 +15,6 @@ import org.mule.runtime.api.el.BindingContext;
 import org.mule.runtime.api.el.ExpressionFunction;
 import org.mule.runtime.api.metadata.TypedValue;
 import org.mule.runtime.core.api.el.GlobalBindingContextProvider;
-import org.mule.runtime.core.el.function.LookupFunction;
 
 import javax.inject.Inject;
 import javax.inject.Named;
