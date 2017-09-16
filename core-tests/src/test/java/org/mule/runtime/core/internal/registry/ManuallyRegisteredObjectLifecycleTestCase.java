@@ -18,9 +18,10 @@ import org.mule.runtime.core.api.MuleContext;
 import org.mule.runtime.core.api.context.MuleContextAware;
 import org.mule.tck.junit4.AbstractMuleContextTestCase;
 
-import org.junit.Test;
+import java.util.HashMap;
+import java.util.Map;
 
-import java.util.Properties;
+import org.junit.Test;
 
 public class ManuallyRegisteredObjectLifecycleTestCase extends AbstractMuleContextTestCase {
 
@@ -32,11 +33,11 @@ public class ManuallyRegisteredObjectLifecycleTestCase extends AbstractMuleConte
   }
 
   @Override
-  protected Properties getStartUpProperties() {
-    Properties properties = new Properties();
-    properties.put("TestInitialisableObject", new TestInitialisableObject());
-    properties.put("TestStartableObject", new TestStartableObject());
-    return properties;
+  protected Map<String, Object> getStartUpRegistryObjects() {
+    Map<String, Object> registryObjects = new HashMap<>();
+    registryObjects.put("TestInitialisableObject", new TestInitialisableObject());
+    registryObjects.put("TestStartableObject", new TestStartableObject());
+    return registryObjects;
   }
 
   @Test
