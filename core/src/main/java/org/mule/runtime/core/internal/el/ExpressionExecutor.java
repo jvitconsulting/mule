@@ -4,7 +4,10 @@
  * license, a copy of which has been included with this distribution in the
  * LICENSE.txt file.
  */
-package org.mule.runtime.core.api.el;
+package org.mule.runtime.core.internal.el;
+
+import org.mule.runtime.core.api.el.ExpressionLanguageContext;
+import org.mule.runtime.core.api.el.ExtendedExpressionLanguageAdaptor;
 
 /**
  * Wraps an expression language engine. Implementations should not wrap expression language engine exceptions, but rather the

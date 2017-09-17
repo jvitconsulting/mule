@@ -4,10 +4,13 @@
  * license, a copy of which has been included with this distribution in the
  * LICENSE.txt file.
  */
-package org.mule.runtime.core.api.security;
+package org.mule.runtime.core.internal.security;
 
 import org.mule.runtime.api.i18n.I18nMessage;
 import org.mule.runtime.core.api.event.BaseEvent;
+import org.mule.runtime.api.security.SecurityContext;
+import org.mule.runtime.core.api.security.SecurityFilter;
+import org.mule.runtime.api.security.UnauthorisedException;
 
 /**
  * <code>CredentialsNotSetException</code> is thrown when user credentials cannot be obtained from the current message

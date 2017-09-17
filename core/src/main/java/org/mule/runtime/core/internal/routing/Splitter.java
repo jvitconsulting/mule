@@ -11,7 +11,7 @@ import org.mule.runtime.api.lifecycle.Initialisable;
 import org.mule.runtime.api.lifecycle.InitialisationException;
 import org.mule.runtime.core.privileged.event.Acceptor;
 import org.mule.runtime.core.api.event.BaseEvent;
-import org.mule.runtime.core.api.exception.ErrorTypeMatcher;
+import org.mule.runtime.core.privileged.exception.ErrorTypeMatcher;
 import org.mule.runtime.core.privileged.processor.Router;
 import org.mule.runtime.core.internal.routing.outbound.AbstractMessageSequenceSplitter;
 import org.mule.runtime.core.privileged.expression.ExpressionConfig;

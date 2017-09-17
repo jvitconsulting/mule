@@ -4,7 +4,7 @@
  * license, a copy of which has been included with this distribution in the
  * LICENSE.txt file.
  */
-package org.mule.runtime.core.api.exception;
+package org.mule.runtime.core.privileged.exception;
 
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertThat;
@@ -15,10 +15,12 @@ import static org.mule.test.allure.AllureConstants.ErrorHandlingFeature.ERROR_HA
 import static org.mule.test.allure.AllureConstants.ErrorHandlingFeature.ErrorHandlingStory.ERROR_TYPES;
 import org.mule.runtime.api.component.ComponentIdentifier;
 import org.mule.runtime.api.message.ErrorType;
+import org.mule.runtime.core.api.exception.AbstractErrorTypeMatcherTestCase;
+import org.mule.runtime.core.api.exception.ErrorTypeRepository;
 
-import org.junit.Test;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Story;
+import org.junit.Test;
 
 @Feature(ERROR_HANDLING)
 @Story(ERROR_TYPES)

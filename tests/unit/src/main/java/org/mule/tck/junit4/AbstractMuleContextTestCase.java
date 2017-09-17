@@ -54,7 +54,7 @@ import org.mule.runtime.core.api.context.MuleContextFactory;
 import org.mule.runtime.core.api.context.notification.MuleContextNotification;
 import org.mule.runtime.core.api.context.notification.MuleContextNotificationListener;
 import org.mule.runtime.core.api.context.notification.NotificationListenerRegistry;
-import org.mule.runtime.core.api.el.ExpressionExecutor;
+import org.mule.runtime.core.internal.el.ExpressionExecutor;
 import org.mule.runtime.core.api.event.BaseEvent;
 import org.mule.runtime.core.api.processor.Processor;
 import org.mule.runtime.core.api.registry.RegistrationException;

@@ -5,7 +5,7 @@
  * LICENSE.txt file.
  */
 
-package org.mule.runtime.core.api.routing;
+package org.mule.runtime.core.privileged.routing;
 
 import static java.lang.System.lineSeparator;
 import static java.util.stream.Collectors.toList;

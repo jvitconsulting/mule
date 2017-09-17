@@ -31,7 +31,7 @@ import org.mule.runtime.core.api.processor.AbstractMessageProcessorOwner;
 import org.mule.runtime.core.privileged.processor.chain.MessageProcessorChain;
 import org.mule.runtime.core.api.processor.Processor;
 import org.mule.runtime.core.privileged.routing.RouterResultsHandler;
-import org.mule.runtime.core.api.routing.RoutingException;
+import org.mule.runtime.core.privileged.routing.RoutingException;
 import org.mule.runtime.core.api.transaction.TransactionConfig;
 import org.mule.runtime.core.privileged.routing.OutboundRouter;
 import org.mule.runtime.core.privileged.routing.DefaultRouterResultsHandler;

@@ -31,7 +31,7 @@ import org.mule.runtime.core.api.construct.Flow;
 import org.mule.runtime.core.api.construct.Pipeline;
 import org.mule.runtime.core.api.security.DefaultMuleAuthentication;
 import org.mule.runtime.core.api.security.DefaultMuleCredentials;
-import org.mule.runtime.core.api.security.SecurityContext;
+import org.mule.runtime.api.security.SecurityContext;
 import org.mule.runtime.core.api.transformer.AbstractTransformer;
 import org.mule.runtime.core.api.transformer.Transformer;
 import org.mule.runtime.core.api.transformer.TransformerException;

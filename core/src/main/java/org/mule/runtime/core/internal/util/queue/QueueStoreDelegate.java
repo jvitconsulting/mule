@@ -5,7 +5,7 @@
  * LICENSE.txt file.
  */
 
-package org.mule.runtime.core.api.util.queue;
+package org.mule.runtime.core.internal.util.queue;
 
 import java.io.Serializable;
 import java.util.Collection;

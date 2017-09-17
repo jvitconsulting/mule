@@ -20,7 +20,7 @@ import org.mule.runtime.core.api.DefaultTransformationService;
 import org.mule.runtime.core.privileged.connector.DispatchException;
 import org.mule.runtime.core.api.event.BaseEvent;
 import org.mule.runtime.core.api.processor.Processor;
-import org.mule.runtime.core.api.routing.RoutingException;
+import org.mule.runtime.core.privileged.routing.RoutingException;
 
 import java.util.List;
 
