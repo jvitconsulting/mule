@@ -4,10 +4,11 @@
  * license, a copy of which has been included with this distribution in the
  * LICENSE.txt file.
  */
-package org.mule.runtime.core.api.routing;
+package org.mule.runtime.core.privileged.routing;
 
 import org.mule.runtime.core.api.processor.Processor;
 import org.mule.runtime.api.i18n.I18nMessage;
+import org.mule.runtime.core.api.routing.RoutingException;
 
 /**
  * <code>ResponseTimeoutException</code> is thrown when a response is not received in a given timeout in the Response Router.
