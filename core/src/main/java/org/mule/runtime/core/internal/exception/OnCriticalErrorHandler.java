@@ -11,9 +11,9 @@ import static reactor.core.publisher.Mono.error;
 import org.mule.runtime.api.message.Error;
 import org.mule.runtime.core.api.event.BaseEvent;
 import org.mule.runtime.core.api.exception.AbstractExceptionListener;
-import org.mule.runtime.core.privileged.exception.ErrorTypeMatcher;
+import org.mule.runtime.core.api.exception.ErrorTypeMatcher;
 import org.mule.runtime.core.api.exception.MessagingException;
-import org.mule.runtime.core.privileged.exception.SingleErrorTypeMatcher;
+import org.mule.runtime.core.api.exception.SingleErrorTypeMatcher;
 import org.mule.runtime.core.privileged.exception.MessagingExceptionHandlerAcceptor;
 
 import java.util.Optional;

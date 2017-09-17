@@ -16,7 +16,9 @@ import static org.mule.test.allure.AllureConstants.ErrorHandlingFeature.ErrorHan
 import org.mule.runtime.api.component.ComponentIdentifier;
 import org.mule.runtime.api.message.ErrorType;
 import org.mule.runtime.core.api.exception.AbstractErrorTypeMatcherTestCase;
+import org.mule.runtime.core.api.exception.ErrorTypeMatcher;
 import org.mule.runtime.core.api.exception.ErrorTypeRepository;
+import org.mule.runtime.core.api.exception.SingleErrorTypeMatcher;
 
 import io.qameta.allure.Feature;
 import io.qameta.allure.Story;

@@ -4,7 +4,9 @@
  * license, a copy of which has been included with this distribution in the
  * LICENSE.txt file.
  */
-package org.mule.runtime.core.api.security;
+package org.mule.runtime.core.privileged.security;
+
+import org.mule.runtime.core.privileged.security.tls.TlsConfiguration;
 
 import java.io.IOException;
 
@@ -18,7 +20,7 @@ import javax.net.ssl.KeyManagerFactory;
  * <p>
  * The information specified in this interface is used to configure a key store directly. For more information see the
  * documentation for the connector or protocol in question. The comments in
- * {@link org.mule.runtime.core.api.security.tls.TlsConfiguration} may also be useful.
+ * {@link TlsConfiguration} may also be useful.
  * </p>
  */
 public interface TlsDirectKeyStore {

@@ -4,7 +4,9 @@
  * license, a copy of which has been included with this distribution in the
  * LICENSE.txt file.
  */
-package org.mule.runtime.core.api.security.tls;
+package org.mule.runtime.core.internal.secutiry.tls;
+
+import org.mule.runtime.core.privileged.security.tls.TlsConfiguration;
 
 import java.io.IOException;
 import java.util.Properties;
@@ -35,34 +37,9 @@ public class TlsPropertiesMapper {
     this.namespace = namespace;
   }
 
-  public void writeToProperties(Properties properties, TlsConfiguration configuration) {
-    writeTrustStoreToProperties(properties, configuration);
-    writeKeyStoreToProperties(properties, configuration);
-  }
-
   public void readFromProperties(TlsConfiguration configuration, Properties properties) throws IOException {
     readTrustStoreFromProperties(configuration, properties);
     readKeyStoreFromProperties(configuration, properties);
-  }
-
-  private void writeTrustStoreToProperties(Properties properties, TlsConfiguration configuration) {
-    String trustStoreName = configuration.getTrustStore();
-    String trustStorePassword = configuration.getTrustStorePassword();
-
-    if (null == trustStoreName && !configuration.isExplicitTrustStoreOnly()) {
-      logger.info("Defaulting " + namespace + " trust store to client Key Store");
-      trustStoreName = configuration.getClientKeyStore();
-      trustStorePassword = configuration.getClientKeyStorePassword();
-    }
-    if (null != trustStoreName) {
-      synchronized (properties) {
-        setProperty(properties, TRUST_NAME_SUFFIX, trustStoreName);
-        setProperty(properties, TRUST_TYPE_SUFFIX, configuration.getTrustStoreType());
-        setProperty(properties, TRUST_PASSWORD_SUFFIX, trustStorePassword);
-        setProperty(properties, TRUST_ALGORITHM_SUFFIX, configuration.getTrustManagerAlgorithm());
-      }
-      logger.debug("Set Trust Store: " + namespace + TRUST_NAME_SUFFIX + " = " + trustStoreName);
-    }
   }
 
   private void readTrustStoreFromProperties(TlsConfiguration configuration, Properties properties) throws IOException {
@@ -71,17 +48,6 @@ public class TlsPropertiesMapper {
     configuration.setTrustStorePassword(getProperty(properties, TRUST_PASSWORD_SUFFIX, configuration.getTrustStorePassword()));
     configuration
         .setTrustManagerAlgorithm(getProperty(properties, TRUST_ALGORITHM_SUFFIX, configuration.getTrustManagerAlgorithm()));
-  }
-
-  private void writeKeyStoreToProperties(Properties properties, TlsConfiguration configuration) {
-    if (null != configuration.getClientKeyStore()) {
-      synchronized (properties) {
-        setProperty(properties, KEY_NAME_SUFFIX, configuration.getClientKeyStore());
-        setProperty(properties, KEY_TYPE_SUFFIX, configuration.getClientKeyStoreType());
-        setProperty(properties, KEY_PASSWORD_SUFFIX, configuration.getClientKeyStorePassword());
-      }
-      logger.info("Set Key Store: " + namespace + KEY_NAME_SUFFIX + " = " + configuration.getClientKeyStore());
-    }
   }
 
   // note the asymmetry here. this preserves the semantics of the original implementation.
@@ -100,16 +66,6 @@ public class TlsPropertiesMapper {
     configuration.setKeyStore(getProperty(properties, KEY_NAME_SUFFIX, configuration.getKeyStore()));
     configuration.setKeyStoreType(getProperty(properties, KEY_TYPE_SUFFIX, configuration.getKeyStoreType()));
     configuration.setKeyStorePassword(getProperty(properties, KEY_PASSWORD_SUFFIX, configuration.getKeyStorePassword()));
-  }
-
-
-  private void setProperty(Properties properties, String suffix, String value) {
-    if (null != value) {
-      properties.setProperty(namespace + suffix, value);
-      if (logger.isDebugEnabled()) {
-        logger.debug(namespace + suffix + " <- " + value);
-      }
-    }
   }
 
   private String getProperty(Properties properties, String suffix, String deflt) {

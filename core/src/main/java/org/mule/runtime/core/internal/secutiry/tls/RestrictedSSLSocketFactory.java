@@ -4,11 +4,12 @@
  * license, a copy of which has been included with this distribution in the
  * LICENSE.txt file.
  */
-package org.mule.runtime.core.api.security.tls;
+package org.mule.runtime.core.internal.secutiry.tls;
 
 import static org.mule.runtime.api.i18n.I18nMessageFactory.createStaticMessage;
 import org.mule.runtime.api.exception.MuleRuntimeException;
 import org.mule.runtime.core.internal.util.ArrayUtils;
+import org.mule.runtime.core.privileged.security.tls.TlsConfiguration;
 
 import java.io.IOException;
 import java.net.InetAddress;

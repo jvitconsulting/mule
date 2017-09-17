@@ -14,9 +14,9 @@ import org.mule.runtime.api.lifecycle.InitialisationException;
 import org.mule.runtime.api.message.ErrorType;
 import org.mule.runtime.core.api.MuleContext;
 import org.mule.runtime.core.api.event.BaseEvent;
-import org.mule.runtime.core.privileged.exception.ErrorTypeMatcher;
+import org.mule.runtime.core.api.exception.ErrorTypeMatcher;
 import org.mule.runtime.core.api.exception.ErrorTypeRepository;
-import org.mule.runtime.core.privileged.exception.SingleErrorTypeMatcher;
+import org.mule.runtime.core.api.exception.SingleErrorTypeMatcher;
 import org.mule.runtime.core.internal.message.InternalMessage;
 
 /**

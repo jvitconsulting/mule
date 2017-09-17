@@ -16,7 +16,7 @@ import org.hamcrest.Matcher;
 /**
  * Tests whether the value has a given class name in the class hierarchy
  */
-public class HasClassHierarchyWith extends DiagnosingMatcher<Class> {
+public class HasClassHierarchyWith extends DiagnosingMatcher<Object> {
 
   private final String expectedClassName;
 
@@ -32,7 +32,7 @@ public class HasClassHierarchyWith extends DiagnosingMatcher<Class> {
       return false;
     }
 
-    Class currentClass = (Class) item;
+    Class currentClass = item.getClass();
     StringBuilder builder = new StringBuilder();
     do {
       if (expectedClassName.equals(currentClass.getName())) {
